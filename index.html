@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border border-bottom-5" style="font-weight: 500">
+      <div class="container-fluid position-relative">
+          <a class="navbar-brand" href="#"><svg style="font-size: 50px" aria-hidden="true" focusable="false" class="main-nav__logo__image" xmlns="http://www.w3.org/2000/svg" width="60" height="30" viewBox="0 0 45 21"><path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path></svg></a>
+          <button class="navbar-toggler border-0" style="position: relative;left: -80%" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span  style="font-weight: 500; text-align: left; color: black;">Menu</span>
+            <svg style="position: relative;left: 1px;top: 3px" xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="black" class="bi bi-caret-down-fill" viewBox="0 0 30 30">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 p-2" style="margin-left: 10px">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Live</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Push</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Move</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Note</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Link</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Shop</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Packs</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Help</a>
+            </li>
+
+              <!---->
+            <div class="d-lg-none" style="font-size: 1rem">
+              <div class="py-3">
+                     <h3>More on Ableton.com:</h3>
+
+                 <ul class="navbar-nav" style="grid-column-gap: 1rem">
+                         <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Blog</a>
+                     </li>
+                      <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Ableton for the Classroom</a>
+                     </li>
+                         <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Ableton for Colleges and Universities</a>
+                     </li>
+                          <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Certified Training</a>
+                       </li>
+                        <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">About Ableton</a>
+                       </li>
+                        <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Jobs</a>
+                       </li>
+                        <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Apprenticeships</a>
+                       </li>
+                     </ul>
+                 </div>
+                     <div class="py-3">
+                         <h3>More from Ableton:</h3>
+                         <div class="row">
+                             <div class="col">
+                                 <h4>Loop</h4>
+                                 <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                             </div>
+                             <div class="col">
+                                 <h4>Learning Music</h4>
+                                 <p>Learn the fundamentals of music making right in your browser.</p>
+                             </div>
+                             <div class="col">
+                                 <h4>Learning Synths</h4>
+                                 <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                             </div>
+                             <div class="col">
+                                 <h4>Making Music</h4>
+                                 <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
+                             </div>
+                         </div>
+                     </div>
+            </div>
+              <!----->
+
+
+             <li class="nav-item d-none d-lg-block" style="font-weight: 400">
+              <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#More" style="font-size: 1.25rem; font-weight: 450">
+                    <font color="#ff4500">More +</font>
+              </button>
+                     </li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+
+    <!--- the contents of the more button push down the rest of the items and prevent overlapping--->
+
+                 <div class="collapse start-0 bg-white w-100" id="More" style="top: calc(100% + 5px); z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-size: 1.1rem; font-weight: 500">
+                     <div class="px-4 py-3">
+                     <h3>More on Ableton.com:</h3>
+
+                 <ul class="navbar-nav list-group-horizontal" style="grid-column-gap: 2rem">
+                         <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Blog</a>
+                     </li>
+                      <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Ableton for the Classroom</a>
+                     </li>
+                         <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Ableton for Colleges and Universities</a>
+                     </li>
+                          <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Certified Training</a>
+                       </li>
+                        <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">About Ableton</a>
+                       </li>
+                        <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Jobs</a>
+                       </li>
+                        <li class="nav-item">
+                         <a class="nav-link text-dark" href="#">Apprenticeships</a>
+                       </li>
+                     </ul>
+                 </div>
+                     <div class="px-4 py-3">
+                         <h3>More from Ableton:</h3>
+                         <div class="row">
+                             <div class="col">
+                                 <h4>Loop</h4>
+                                 <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                             </div>
+                             <div class="col">
+                                 <h4>Learning Music</h4>
+                                 <p>Learn the fundamentals of music making right in your browser.</p>
+                             </div>
+                             <div class="col">
+                                 <h4>Learning Synths</h4>
+                                 <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                             </div>
+                             <div class="col">
+                                 <h4>Making Music</h4>
+                                 <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+
+    <!--- second navbar --->
+    <nav class="navbar navbar-expand-sm bg-white sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 p-2" style="margin-left: 10px;">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" style="font-size: 1rem; font-weight: 500" href="#">About</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-dark"  style="font-size: 1rem; font-weight: 500" href="#">Jobs</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" style="font-size: 1rem ; font-weight: 500" href="#">Apprenticeships</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--- main contents --->
+
+<div class="row col-12 mx-auto position-relative" style="margin-bottom: 100px">
+    <img src="https://ableton-production.imgix.net/about/header.jpg?fit=crop&auto=format&fm=jpg" class="img-fluid mx-auto d-block", style="width: 1300px; height:auto;">
+    <h1 class="text-sm-center" style="color:#FD5948; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 8.2rem">
+        Ableton
+    </h1>
+</div>
+
+<div class="container">
+    <div class="row col-12 justify-content-center">
+        <div class="col-lg-7 text-center">
+            <h3 style="margin-bottom: 25px; text-align: left;">
+                We make <a href="#" style="text-decoration: none">Live</a>,
+                <a href="#" style="text-decoration: none">Push</a> and
+                <a href="#" style="text-decoration: none">Link</a> — unique software and
+                hardware for music creation and performance. With these products,
+                our community of users creates amazing things.
+            </h3>
+            <p style="margin-bottom: 100px; text-align: left; font-size: 1.2rem">
+                Ableton was founded in 1999 and released the first version of Live
+                in 2001. Our products are used by a community of dedicated
+                musicians, sound designers, and artists from across the world.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row" style="background-color: #fbffa7;">
+        <div class="col-7">
+            <img class="img-fluid" src="https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop" alt="left-image">
+        </div>
+        <div class="col-5">
+            <img class="img-fluid" src="https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop" alt="right-image">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row col-12 justify-content-center" style="margin-top: 100px">
+        <div class="col-lg-7 text-center">
+            <h3 style="text-align: left; margin-bottom: 25px">
+                Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.
+            </h3>
+            <p style="margin-bottom: 10px; text-align: left; font-size: 1.2rem">
+                We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <figure class="ratio ratio-16x9" style="width: 60%; height: auto;">
+        <iframe
+            src="https://www.youtube.com/embed/9SbnhgjeyXA"
+            allowfullscreen>
+        </iframe>
+        <figcaption style="text-align: left; margin-top: 10px;">Why Ableton - Juanpe Bolivar</figcaption>
+    </figure>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <h3 style="margin-bottom: 25px">We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.</h3>
+            <p style="font-size: 1.2rem; margin-bottom: 100px">Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: #b6ffc0;">
+    <div class="row">
+    <div class="col-sm-6 d-flex flex-column align-items-left" style="row-gap: 100px">
+            <img class="img-fluid" src="https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop" alt="top-left">
+            <img class="img-fluid" src="https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop" alt="bottom-left">
+        </div>
+        <div class="col-sm-6 h-50 d-flex">
+            <img class="img-fluid" src="https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop" alt="right">
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 130px">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+            <h3 style="text-align: left">
+                We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive to make them great.
+            </h3>
+            <p style="text-align: left; font-size: 1.2rem; margin-top: 25px; margin-bottom: 120px">
+                Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and debate are valued and openly encouraged.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <img class="img-fluid" src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?fit=crop&auto=format&fm=jpg"
+    alt="sound-system">
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8" style=" margin-top: 140px; margin-bottom: 140px">
+            <h3 style="text-align: left; margin-bottom: 40px">
+                We’re passionate about what we do, but we’re equally passionate about improving who we are.
+            </h3>
+            <p style="text-align: left; font-size: 1.2rem">
+                We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.
+            </p>
+            <p style="text-align: left; font-size: 1.2rem">
+                Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.
+            </p>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid" style="background-color:#d5b3ff; background-size: 50%">
+        <div class="row">
+            <div class="col-lg-5" style="margin-block: 170px">
+                <img class="img-fluid" src="https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop">
+            </div>
+            <div class="col-lg-7 w-70" style="margin-block: 150px">
+                <img class="img-fluid" src="https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8" style="margin-top: 130px; margin-bottom: 100px">
+                <h2 style="margin-bottom: 25px">
+                    We want our employees to love it here. Since we’re looking for exceptional talent from around the world, we will do everything we can to make your transition as easy as possible.
+                </h2>
+                <p style="font-size: 1.2rem">
+                    If you're joining us in Berlin, we'll help with relocation and paperwork. We’ll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: #b1c5ff;margin-bottom: 100px ">
+        <div class="row">
+            <div class="col-lg-6 float-start">
+                <img class="img-fluid" style="margin-left: -12px;" src="https://ableton-production.imgix.net/about/photo-8.jpg?fit=crop&crop=right">
+            </div>
+            <div class="col-lg-6 float-end justify-content-center" style="padding: 8.3vw">
+                <h3>We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.</h3>
+                <br>
+                <a class="text-center" href="#" style="text-decoration: none; font-size: 1.7rem; font-weight: 500; row-gap: 70px"><font color="#0000ff">See latest Jobs ></font></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- border-->
+        <div class="container-fluid border-top border-opacity-75"></div>
+        <!---footer--->
+        <div class="container">
+            <div class="row">
+                <h1 style="padding-top: 130px; padding-bottom: 50px; font-size: 3.5rem">Ableton</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Register Live or Push ></a>
+                    <br>
+                     <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">About Ableton ></a>
+                    <br>
+                     <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Jobs ></a>
+                </div>
+                <div class="col-lg-4 col-12 mb-4">
+                    <p  style="font-size: 1.2rem; font-weight: 420; margin-bottom: 0">Education</p>
+                    <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Offers for students and teachers ></a>
+                    <br>
+                     <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Ableton for the Classroom ></a>
+                    <br>
+                     <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Ableton for Colleges and Universities ></a>
+                </div>
+                <div class="col-lg-5 col-12 mb-4">
+                    <p style="font-size: 1.2rem; font-weight: 420; margin-bottom: 0">Sign up to our newsletter</p>
+                    <p style="font-size: 1.1rem">Enter your email address to stay up to date with the latest offers,<br> tutorials, downloads, surveys and more.</p>
+                    <div class="input-group" style="border: none">
+                        <input type="text" class="form-control" placeholder="Email Address" style="border: none; background-color: #eee; padding: 0.4em 0.75em; border-radius: 0;">
+                        <button class="btn" type="submit" style="background-color: #0000ff; color: white; border: none; border-radius: 0; font-weight: 500; padding: .35em 1.5em;width: 20%">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <p  style="font-size: 1.2rem; font-weight: 420; margin-bottom: 0">Community</p>
+                    <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Find Ableton User Groups ></a>
+                    <br>
+                     <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Find Certified Training ></a>
+                    <br>
+                    <a class="text-dark" href="#" style="text-decoration: none; font-size: 1.1rem">Become a Certified Trainer ></a>
+                </div>
+                <div class="col-lg-4 col-12 mb-4">
+                     <p  style="font-size: 1.2rem; font-weight: 420; margin-bottom: 10px">Language and Location</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                        <select class="form-select" style="border: 0; border-radius: 0; background-color: #eee; color: black; font-weight: 500; width: 150px;">
+                             <option>English</option>
+                             <option>Deutsch</option>
+                             <option>Français</option>
+                            <option>日本語</option>
+                            <option>简体中文</option>
+                            <option>Español</option>
+                         </select>
+                        </div>
+                        <div class="col-sm-4">
+                        <select class="form-select" style="border: 0; border-radius: 0; background-color: #eee; color: black; font-weight: 500; width: 150px;">
+                            <option>Iran</option>
+                            <option>Germany</option>
+                            <option>India</option>
+                            <option>China</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- footer navbar--->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+<!--                    <a class="navbar-brand" href="#">-->
+<!--                        <svg style="position: absolute;right: 0; top: 0;font-size: 50px" aria-hidden="true" focusable="false" class="main-nav__logo__image" xmlns="http://www.w3.org/2000/svg" width="45" height="21" viewBox="0 0 45 21"><path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path></svg>-->
+<!--                    </a>-->
+                    <ul class="navbar-nav" style="margin-top: 50px; font-size: .8rem; font-weight: 540; margin-bottom: 120px">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark">Contact Us</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link text-dark">Press Resources</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link text-dark">Legal Info</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link text-dark">Privacy Policy</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link text-dark">Cookie Setting</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link text-dark">Imprint</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
